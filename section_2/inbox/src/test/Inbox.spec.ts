@@ -1,4 +1,4 @@
-import * as assert from 'assert';
+import { ok } from 'assert';
 import { provider } from 'ganache';
 import Web3 from 'web3';
 import { beforeEach } from 'mocha';
@@ -17,6 +17,6 @@ beforeEach(async ()=>{
 
 describe("Inbox",()=>{
     it('Deploys a contract', ()=>{
-        console.log(inbox);
+        ok(inbox.options.address);
     });
 });
