@@ -21,8 +21,16 @@ describe("Inbox",()=>{
     it('should deploy a contract', ()=>{
         ok(inbox.options.address);
     });
+
     it('should have a default message', async ()=>{
         const message = await inbox.methods.message().call();
         strictEqual(message, INITIAL_MESSAGE);
+    });
+
+    it('should be able to change the message', async ()=>{
+        const newMsg: string = 'bye';
+        await inbox.methods.setMessage(newMsg).send({ from: accounts[0] });
+        const message = await inbox.methods.message().call();
+        strictEqual(message, newMsg);
     });
 });
