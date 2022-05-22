@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ts-mocha -p tsconfig.json src/**/*.spec.ts",
-    "start": "./node_modules/.bin/tsc",
-    "runwatch": "./node_modules/.bin/tsc -w",
-    "compile": "node dist/compile.js",
-    "runts": "ts-node src/compile.ts",
+    "compile": "ts-node src/compile.ts",
     "deploy": "ts-node src/deploy.ts"
   },
   "author": "",
