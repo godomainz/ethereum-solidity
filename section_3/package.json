@@ -20,7 +20,7 @@
     "ganache": "^7.1.0",
     "ganache-cli": "^6.12.2",
     "mocha": "^10.0.0",
-    "solc": "^0.4.17",
+    "solc": "^0.8.6",
     "solc-typed-ast": "^10.0.0",
     "truffle": "^5.5.14",
     "ts-mocha": "^10.0.0",
